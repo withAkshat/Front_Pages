@@ -14,6 +14,11 @@ html,body{
     src: url(./sf-pro-text_regular.woff2);
 }
 
+@font-face {
+    font-family:appleBold;
+    src: url(./sf-pro-display_bold.woff2);
+}
+
 #main{
     padding-top: 53px;
     background-color: black;
@@ -54,7 +59,6 @@ html,body{
 }
 
 .name h1{
-    
     font-size: 50px;
 }
 
@@ -164,4 +168,79 @@ html,body{
     background-color: #f5f5f7;
     width: 70px;
     margin-left: 20px;
+}
+
+/* Others */
+
+.others{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.watch{
+    height: 80vh;
+    width: 49%;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_large_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #202022;
+}
+
+.airpods{
+    height: 80vh;
+    width: 49%;
+    background-color: #202022;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Headings fonts */
+.essentials{
+    font-family: apple;
+    color: Black;
+    text-align: center;
+    margin-top: 53px;;
+
+}
+
+.essentials h1{
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.essentials .series{
+    font-weight: 300;
+    color: #000000d2;
+}
+
+.essentials .firstWord{
+    font-family: appleBold;
+    font-weight: 700;
+}
+
+.essentials h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* .essentials h1::before{
+    content: "SERIES";
+    font-weight: 500;
+} */
+
+.essentials .links>button{
+    background-color: #0071e3;
+    color: white;
+    border-radius: 50px;
+    height: 35px;
+    width:100px;
+    border:none;
+    font-size: 13px;
+    font-weight:500;
+}
+
+.essentials #buy{
+    background-color: transparent;
 }
