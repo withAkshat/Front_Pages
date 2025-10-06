@@ -258,3 +258,85 @@ html,body {
     gap:12px;
     
 }
+
+.cards{
+    height: 700px;
+    display:flex;
+    gap:50px;
+    padding-left: 150px;
+ 
+
+}
+
+.card{
+    color: white;
+    height: 500px;
+    width: 26%;
+    background-color: #817b7b21;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subCard{
+    transform: translate(8%,7%);
+    height:445px;
+    width:86%;
+    clip-path: polygon(0 0, 44% 0, 55% 13%, 100% 13%, 100% 100%, 51% 100%, 51% 89%, 0 89%);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.cards .card:nth-child(1) .subCard{
+    background-image: url(./Assets/Gemini_Generated_Image_ukac3kukac3kukac.png);
+}
+
+.cards .card:nth-child(2) .subCard{
+    background-image: url(./Assets/Gemini_Generated_Image_tjhx7ltjhx7ltjhx.png);
+}
+
+.cards .card:nth-child(3) .subCard{
+    background-image: url(./Assets/Gemini_Generated_Image_iu8rjriu8rjriu8r.png);
+}
+
+.card{
+    position: relative;
+}
+
+.timer{
+   position: absolute;
+   right:10%;
+   top: 8%;
+   z-index: 1;
+   
+}
+
+.curr{
+    position: absolute;
+    bottom: 6%;
+    left: 18%;
+}
+
+
+.timer p:nth-child(2){
+    
+    font-size: large;
+    line-height: 75%;
+}
+
+.timer p:nth-child(1){
+    color: #bbbbbb94;
+    font-size: small;
+   
+}
+
+.card img{
+    height: auto;
+    width:10%;
+    margin-left: 22px;
+    margin-top: -5px;
+    padding-left: 2px;
+    padding-bottom: 4px;
+    border-radius:50% ;
+    
+}
