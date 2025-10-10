@@ -260,7 +260,7 @@ html,body {
 }
 
 .cards{
-    height: 700px;
+    height: 550px;
     display:flex;
     gap:50px;
     padding-left: 150px;
@@ -339,4 +339,33 @@ html,body {
     padding-bottom: 4px;
     border-radius:50% ;
     
+}
+
+.bnt{
+    height:110px;
+    width: 80%;
+    margin-left: 125px;
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.bnt button:nth-child(1){
+    box-shadow: 3px 3px 1px #7c06e2;
+}
+
+.bnt button:nth-child(2){
+    box-shadow: 3px 3px 1px rgb(192, 255, 34);
+}
+
+.bnt button:nth-child(3){
+    box-shadow: 3px 3px 1px orange;
+}
+
+button{
+    height: 47px;
+    color:white;
+    background-color: #151515;
+    padding: 12px 50px;
+    border-radius: 8px;
 }
