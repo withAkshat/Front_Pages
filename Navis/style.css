@@ -14,7 +14,7 @@ html,body {
 .main{
     height: 100vh;
     width: 100%;
-    background-color: bisque;
+    background-color: white;
 }
 
 .padTest{
@@ -49,6 +49,7 @@ html,body {
 }
 
 .nav button:nth-child(1){
+    background-color: transparent;
     color: blue;
     padding:10px 20px;
     border-radius: 50px;
@@ -94,7 +95,7 @@ html,body {
 
 .desc button:nth-child(3){
     color:blue;
-    background-color: white;
+    background-color: transparent;
     border: 1px solid blue;
     font-size: 15px;
     padding:16px 30px;
@@ -156,7 +157,6 @@ img{
 .page2{
     height: 100vh;
     width:100%;
-
     padding: 4rem 0.6rem;
 }
 
@@ -220,4 +220,93 @@ img{
     object-position: 50% 30%;
     border-radius: 20px;
     transform: scale(0.95);
+}
+
+.footer{
+    height: 600px;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-image: url(https://uploads-ssl.webflow.com/5ea7ecd0debb84369437c163/6435e382c69a8d0b2d57d425_navis-capital-partners-no-background.png);
+}
+
+.sec1{
+    background-color: rgb(25, 32, 33);
+    padding: 70px;
+    border-radius: 20px;
+    margin: 12px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-areas: "logo logo"
+                         "subscribe links"
+                         "subscribe links"
+
+    ;
+}
+
+.logo{
+    grid-area: logo;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.subscribe{
+    color:white;
+    grid-area: subscribe;
+    margin-top: 2rem;
+    display: flex;    
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subscribe .inp input::placeholder{
+   color:#fff;
+    font-size: 16px;
+}
+
+.subscribe .inp input{
+    background-color: rgb(153, 153, 153);
+    padding: 1rem 3.5rem 1rem 1.5rem;
+    border:none;
+    border-radius: 50px;
+}
+
+.subscribe .inp button{
+    color:white;
+    background-color: blue;
+    border:none;
+    font-size: 15px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 50px;
+}
+
+.subscribe h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.links{
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links div{
+    display: grid;
+    color: rgba(255, 255, 255, 0.911);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.links div h2{
+    font-size: 20px;
+    font-weight:500 ;
+}
+
+.links div p{
+    font-size:15px;
 }
