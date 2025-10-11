@@ -127,6 +127,7 @@ img{
 
 .page1{
     background-color: rgba(246, 244, 244, 0.936);
+    border-radius:12px;
     padding: 40px 0;
     padding-left: 70px;
     padding-right: 70px;
@@ -165,7 +166,7 @@ img{
     width:100%;
     background-color: rgba(246, 244, 244, 0.947);
     padding:4rem;
-
+    border-radius: 12px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 3fr 4fr;
