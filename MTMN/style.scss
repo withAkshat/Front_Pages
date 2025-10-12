@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: figtree;
+}
+
+@font-face {
+    font-family: century;
+    src: url(./assets/CENTURY.TTF);
+}
+
+@mixin centerElement(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 200vh;
+    width: 100%;
+    color:white;
+    padding: 3rem;
+    background-image: url(./assets/HGpng.png);
+    background-size: cover;
+
+    nav{
+        @include centerElement();
+        justify-content: space-between;
+        font-size: 0.9rem;
+
+        .navL{
+            font-family: century;
+            font-size: 1rem;
+
+            h2{
+                font-weight: 400;
+            }
+        }
+
+        .navR{
+            @include centerElement();
+            gap: 0.4rem;
+
+            i{
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+        }
+
+        .navOps{
+            width: 20%;
+            @include centerElement();
+            justify-content: space-around;
+        }
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 100vh;
+        transform: translate(0, -10%);
+
+        .socials{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-column: 1/2;
+
+            div{
+                display: inline-block;
+                transform:rotate(90deg);
+
+                p{
+                    display: inline-block;
+                }
+            }
+        }
+
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-column: 2/3;
+        }
+
+        .locate{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            grid-column: 3/ 4;
+        }
+    }
+
+}

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: figtree;
+}
+
+@font-face {
+  font-family: century;
+  src: url(./assets/CENTURY.TTF);
+}
+main {
+  height: 200vh;
+  width: 100%;
+  color: white;
+  padding: 3rem;
+  background-image: url(./assets/HGpng.png);
+  background-size: cover;
+}
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+main nav .navL {
+  font-family: century;
+  font-size: 1rem;
+}
+main nav .navL h2 {
+  font-weight: 400;
+}
+main nav .navR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+main nav .navR i {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+main nav .navOps {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100vh;
+  transform: translate(0, -10%);
+}
+main section .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1/2;
+}
+main section .socials div {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+main section .socials div p {
+  display: inline-block;
+}
+main section .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2/3;
+}
+main section .locate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  grid-column: 3/4;
+}/*# sourceMappingURL=style.css.map */
