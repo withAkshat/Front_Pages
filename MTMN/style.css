@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: figtree;
@@ -55,7 +56,7 @@ main nav .navOps {
 }
 main section {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 100vh;
   transform: translate(0, -10%);
 }
@@ -64,19 +65,52 @@ main section .socials {
   flex-direction: column;
   justify-content: center;
   grid-column: 1/2;
+  gap: 1rem;
 }
 main section .socials div {
-  display: inline-block;
-  transform: rotate(90deg);
+  position: absolute;
+  top: 39%;
+  left: -22px;
+  rotate: 90deg;
 }
 main section .socials div p {
-  display: inline-block;
+  font-size: 0.9rem;
 }
 main section .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-column: 2/3;
+  padding-left: 7rem;
+}
+main section .head .mainHeading {
+  margin-bottom: 2rem;
+}
+main section .head .mainHeading h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: century;
+}
+main section .head .topHeading {
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+main section .head .topHeading .line {
+  display: inline-block;
+  height: 6px;
+  width: 60px;
+  margin-right: 20px;
+  border-top: 2px solid palegoldenrod;
+}
+main section .head .topHeading h4 {
+  color: palegoldenrod;
+  font-size: 0.85rem;
+  display: inline-block;
+  letter-spacing: 6px;
+}
+main section .head .btmHeading {
+  display: flex;
+  gap: 1rem;
 }
 main section .locate {
   display: flex;
@@ -84,4 +118,11 @@ main section .locate {
   justify-content: center;
   align-items: end;
   grid-column: 3/4;
+}
+main section .locate div {
+  padding: 1rem;
+  border-right: 3px solid rgba(255, 255, 255, 0.437);
+}
+main section .locate div:nth-child(1) {
+  border-right: 3px solid white;
 }/*# sourceMappingURL=style.css.map */

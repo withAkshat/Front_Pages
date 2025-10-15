@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: figtree;
@@ -15,87 +16,143 @@ html, body{
     src: url(./assets/CENTURY.TTF);
 }
 
-@mixin centerElement(){
+@mixin centerElement() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main{
+main {
     height: 200vh;
     width: 100%;
-    color:white;
+    color: white;
     padding: 3rem;
     background-image: url(./assets/HGpng.png);
     background-size: cover;
 
-    nav{
+    nav {
         @include centerElement();
         justify-content: space-between;
         font-size: 0.9rem;
 
-        .navL{
+        .navL {
             font-family: century;
             font-size: 1rem;
 
-            h2{
+            h2 {
                 font-weight: 400;
             }
         }
 
-        .navR{
+        .navR {
             @include centerElement();
             gap: 0.4rem;
 
-            i{
+            i {
                 font-size: 1.2rem;
                 font-weight: 100;
             }
         }
 
-        .navOps{
+        .navOps {
             width: 20%;
             @include centerElement();
             justify-content: space-around;
         }
     }
 
-    section{
+    section {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
         grid-template-rows: 100vh;
         transform: translate(0, -10%);
 
-        .socials{
+        .socials {
             display: flex;
             flex-direction: column;
             justify-content: center;
             grid-column: 1/2;
+            gap: 1rem;
 
-            div{
-                display: inline-block;
-                transform:rotate(90deg);
+            div {
+                position: absolute;
+                top: 39%;
+                left: -22px;
+                rotate: 90deg;
 
-                p{
-                    display: inline-block;
+                p {
+                    font-size: 0.9rem;
                 }
             }
         }
 
-        .head{
+        .head {
             display: flex;
             flex-direction: column;
             justify-content: center;
             grid-column: 2/3;
+            padding-left:7rem ;
+
+            .mainHeading {
+
+                margin-bottom: 2rem;
+
+                h1 {
+                    font-size: 4rem;
+                    // margin-top: 2rem;
+                    font-weight: 500;
+                    font-family: century;
+                }
+            }
+
+            .topHeading {
+
+                margin-top: -2rem;
+                margin-bottom:1rem;
+
+                .line {
+                    display: inline-block;
+                    height: 6px;
+                    width: 60px;
+                    margin-right: 20px;
+                    border-top: 2px solid palegoldenrod;
+
+                }
+
+                h4 {
+                    color: palegoldenrod;
+                    font-size: 0.85rem;
+                    display: inline-block;
+                    letter-spacing: 6px;
+                }
+            }
+
+            .btmHeading{
+                display: flex;
+                gap: 1rem;
+            }
+
         }
 
-        .locate{
+        .locate {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: end;
             grid-column: 3/4;
+
+            div{
+                padding: 1rem;
+                border-right: 3px solid rgba(255, 255, 255, 0.437);
+                // background-color: bisque;
+            }
+             div:nth-child(1){
+            border-right:3px solid white ;
         }
+
+        }
+
+        
     }
 
 }
