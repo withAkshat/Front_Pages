@@ -23,12 +23,16 @@ body {
 }
 
 main {
-    height: 200vh;
+
+    height: 300vh;
     width: 100%;
     color: white;
+    background-color: #0b1d26;
     padding: 3rem;
     background-image: url(./assets/HGpng.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 
     nav {
         @include centerElement();
@@ -61,7 +65,7 @@ main {
         }
     }
 
-    section {
+    section:nth-child(2) {
         display: grid;
         grid-template-columns: 0.5fr 2fr 0.5fr;
         grid-template-rows: 100vh;
@@ -153,6 +157,32 @@ main {
         }
 
         
+    }
+
+    section:nth-child(3){
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr;
+
+        .bgDiv{
+            display:flex;
+            grid-column: 2/3;
+
+            .desDiv{
+                font-family:fantasy;
+                font-size: 120px;
+                background-color: #4c7589;
+                height: 50vh;
+                width: 50%;
+            }
+
+            .imgDiv{
+                background: #ba4f4f;
+                height: 50vh;
+                width: 50%;
+            }
+        }
     }
 
 }

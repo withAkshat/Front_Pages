@@ -16,12 +16,14 @@ body {
   src: url(./assets/CENTURY.TTF);
 }
 main {
-  height: 200vh;
+  height: 300vh;
   width: 100%;
   color: white;
+  background-color: #0b1d26;
   padding: 3rem;
   background-image: url(./assets/HGpng.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 main nav {
   display: flex;
@@ -54,75 +56,97 @@ main nav .navOps {
   align-items: center;
   justify-content: space-around;
 }
-main section {
+main section:nth-child(2) {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 100vh;
   transform: translate(0, -10%);
 }
-main section .socials {
+main section:nth-child(2) .socials {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-column: 1/2;
   gap: 1rem;
 }
-main section .socials div {
+main section:nth-child(2) .socials div {
   position: absolute;
   top: 39%;
   left: -22px;
   rotate: 90deg;
 }
-main section .socials div p {
+main section:nth-child(2) .socials div p {
   font-size: 0.9rem;
 }
-main section .head {
+main section:nth-child(2) .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-column: 2/3;
   padding-left: 7rem;
 }
-main section .head .mainHeading {
+main section:nth-child(2) .head .mainHeading {
   margin-bottom: 2rem;
 }
-main section .head .mainHeading h1 {
+main section:nth-child(2) .head .mainHeading h1 {
   font-size: 4rem;
   font-weight: 500;
   font-family: century;
 }
-main section .head .topHeading {
+main section:nth-child(2) .head .topHeading {
   margin-top: -2rem;
   margin-bottom: 1rem;
 }
-main section .head .topHeading .line {
+main section:nth-child(2) .head .topHeading .line {
   display: inline-block;
   height: 6px;
   width: 60px;
   margin-right: 20px;
   border-top: 2px solid palegoldenrod;
 }
-main section .head .topHeading h4 {
+main section:nth-child(2) .head .topHeading h4 {
   color: palegoldenrod;
   font-size: 0.85rem;
   display: inline-block;
   letter-spacing: 6px;
 }
-main section .head .btmHeading {
+main section:nth-child(2) .head .btmHeading {
   display: flex;
   gap: 1rem;
 }
-main section .locate {
+main section:nth-child(2) .locate {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   grid-column: 3/4;
 }
-main section .locate div {
+main section:nth-child(2) .locate div {
   padding: 1rem;
   border-right: 3px solid rgba(255, 255, 255, 0.437);
 }
-main section .locate div:nth-child(1) {
+main section:nth-child(2) .locate div:nth-child(1) {
   border-right: 3px solid white;
+}
+main section:nth-child(3) {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+}
+main section:nth-child(3) .bgDiv {
+  display: flex;
+  grid-column: 2/3;
+}
+main section:nth-child(3) .bgDiv .desDiv {
+  font-family: fantasy;
+  font-size: 120px;
+  background-color: #4c7589;
+  height: 50vh;
+  width: 50%;
+}
+main section:nth-child(3) .bgDiv .imgDiv {
+  background: #ba4f4f;
+  height: 50vh;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
