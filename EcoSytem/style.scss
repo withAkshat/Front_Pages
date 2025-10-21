@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font2;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(./Assets/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./Assets/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
+
+@mixin flex($direction, $gap){
+    display:flex;
+    flex-direction:$direction;
+    gap:$gap;
+}
+
+main{
+
+    .bg1{
+        background: linear-gradient(#f3fcff,#fcdee9);
+        display: flex;
+        justify-content: center;
+
+        section.view1 {
+            
+            padding: 3rem 0 3rem 0;
+        
+    
+            .highlight {
+                // width: 100%;
+                margin: 0 1rem 0 1rem;
+        
+                .top {
+                    @include flex(column, 3rem);
+
+
+                    .img {
+                        width: 100%;
+        
+                        img {
+                            width: 100%;
+                        }
+                    }
+        
+                    h1 {
+                        text-align: center;
+                        font-family: font1;
+                        font-size: 3rem;
+                    }
+                }
+        
+                h2 {
+        
+                    margin: 7rem 0 2.5rem 0;
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        
+        
+        }
+
+    }
+
+    section.view2{
+        padding: 3rem 0 3rem 0;
+
+        .content{
+            margin: 0 1.7rem 0 1.7rem;
+            @include flex(column, 3rem);
+
+            div{
+                width:100%;
+                padding: 1.6rem 3rem 0 0;
+                border-top: 4px solid rgba(164, 164, 164, 0.31);
+
+                h3{
+                    font-size:1.5rem;
+                    margin-bottom:1.5rem;
+                }
+
+                p{
+                    color:#4A4A4a;
+                    font-size:1.2rem;
+                    margin-bottom:4.2rem;
+                }
+
+            img{
+                width: 105%;
+            }
+        }    
+        }
+        
+    }
+}
+
+section{
+    max-width:1180px;
+}
+
+// For Bigger Screens
+@media (min-width:1024px) {
+    main{
+
+        .bg1{
+
+            section.view1{
+                .highlight{
+                    .top{
+                        @include flex(row-reverse, 0rem);
+                        align-items: center;
+                        h1{
+                            text-align: start;
+                            font-size: 4.3rem;
+                        }
+
+                        .img{
+                            width:130%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

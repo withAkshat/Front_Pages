@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: font2;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(./Assets/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(./Assets/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
+main .bg1 {
+  background: linear-gradient(#f3fcff, #fcdee9);
+  display: flex;
+  justify-content: center;
+}
+main .bg1 section.view1 {
+  padding: 3rem 0 3rem 0;
+}
+main .bg1 section.view1 .highlight {
+  margin: 0 1rem 0 1rem;
+}
+main .bg1 section.view1 .highlight .top {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .bg1 section.view1 .highlight .top .img {
+  width: 100%;
+}
+main .bg1 section.view1 .highlight .top .img img {
+  width: 100%;
+}
+main .bg1 section.view1 .highlight .top h1 {
+  text-align: center;
+  font-family: font1;
+  font-size: 3rem;
+}
+main .bg1 section.view1 .highlight h2 {
+  margin: 7rem 0 2.5rem 0;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+main section.view2 {
+  padding: 3rem 0 3rem 0;
+}
+main section.view2 .content {
+  margin: 0 1.7rem 0 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view2 .content div {
+  width: 100%;
+  padding: 1.6rem 3rem 0 0;
+  border-top: 4px solid rgba(164, 164, 164, 0.31);
+}
+main section.view2 .content div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main section.view2 .content div p {
+  color: #4A4A4a;
+  font-size: 1.2rem;
+  margin-bottom: 4.2rem;
+}
+main section.view2 .content div img {
+  width: 105%;
+}
+
+section {
+  max-width: 1180px;
+}
+
+@media (min-width: 1024px) {
+  main .bg1 section.view1 .highlight .top {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0rem;
+    align-items: center;
+  }
+  main .bg1 section.view1 .highlight .top h1 {
+    text-align: start;
+    font-size: 4.3rem;
+  }
+  main .bg1 section.view1 .highlight .top .img {
+    width: 130%;
+  }
+}/*# sourceMappingURL=style.css.map */
