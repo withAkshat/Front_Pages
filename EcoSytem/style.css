@@ -53,7 +53,7 @@ main .bg1 section.view1 .highlight h2 {
   text-align: center;
 }
 main section.view2 {
-  padding: 3rem 0 3rem 0;
+  padding: 4.4rem 0 4.4rem 0;
 }
 main section.view2 .content {
   margin: 0 1.7rem 0 1.7rem;
@@ -78,12 +78,140 @@ main section.view2 .content div p {
 main section.view2 .content div img {
   width: 105%;
 }
+main section.view3 {
+  padding: 3rem 0;
+}
+main section.view3 .content {
+  margin: 0 1.7rem 0 1.7rem;
+}
+main section.view3 .content .img {
+  width: 100%;
+}
+main section.view3 .content .img img {
+  width: 100%;
+}
+main section.view3 .content .text h4 {
+  color: #4A4A4A;
+  font-size: 1.13rem;
+  margin-bottom: 1.26rem;
+}
+main section.view3 .content .text h3 {
+  font-size: 2.876rem;
+  margin-bottom: 2rem;
+}
+main section.view3 .content .text p {
+  color: #4A4A4A;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+main section.view3 .content .text .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: start;
+}
+main section.view3 .content .text .btn button {
+  font-size: 0.88rem;
+  background-color: transparent;
+  font-weight: 600;
+}
+main section.view3 .content .text .btn button:nth-child(1) {
+  color: #0468d7;
+  padding: 0.6rem 2rem;
+  border: 1px solid #0468d7;
+  border-radius: 50px;
+  margin-bottom: 0.88rem;
+  transition: all 0.2s ease-out;
+}
+main section.view3 .content .text .btn button:nth-child(1):hover {
+  color: white;
+  background-color: #0468d7;
+  cursor: pointer;
+}
+main section.view3 .content .text .btn button:nth-child(2) {
+  position: relative;
+  border: none;
+  padding: 0.4rem 1.5rem;
+  margin-bottom: 0.9rem;
+  transition: all 0.5s ease;
+}
+main section.view3 .content .text .btn button:nth-child(2) i {
+  position: absolute;
+  left: 90%;
+  transition: all 0.5s ease;
+}
+main section.view3 .content .text .btn button:nth-child(2):hover i {
+  left: 92%;
+}
+main .bg2 {
+  background: linear-gradient(#f5fbfe, #fcfce2);
+  display: flex;
+  justify-content: center;
+}
+main .bg2 section.view4 {
+  padding: 3rem 0;
+}
+main .bg2 section.view4 .content {
+  margin: 0 1.7rem 0 1.7rem;
+}
+main .bg2 section.view4 .content .img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .bg2 section.view4 .content .img img {
+  width: 100%;
+}
+main .bg2 section.view4 .content .text h4 {
+  color: #4A4A4A;
+  font-size: 1.13rem;
+  margin-bottom: 1.26rem;
+}
+main .bg2 section.view4 .content .text h3 {
+  font-size: 2.876rem;
+  margin-bottom: 2rem;
+}
+main .bg2 section.view4 .content .text p {
+  color: #4A4A4A;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+main .bg2 section.view4 .content .text .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: start;
+}
+main .bg2 section.view4 .content .text .btn button {
+  color: white;
+  background-color: #0468d7;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border: 1px solid #0468d7;
+  border-radius: 50px;
+  margin-bottom: 0.88rem;
+  transition: all 0.2s ease-out;
+}
+main .bg2 section.view4 .content .text .btn button:hover {
+  color: #0468d7;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 section {
   max-width: 1180px;
 }
 
 @media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+  }
+  main .bg1 {
+    width: 100%;
+  }
   main .bg1 section.view1 .highlight .top {
     display: flex;
     flex-direction: row-reverse;
@@ -96,5 +224,69 @@ section {
   }
   main .bg1 section.view1 .highlight .top .img {
     width: 130%;
+  }
+  main section.view2 .content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 3.125rem;
+  }
+  main section.view3 .content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  main section.view3 .content .text {
+    padding: 0 9rem 0 4rem;
+    width: 150%;
+  }
+  main section.view3 .content .text h4 {
+    font-size: 1.23rem;
+  }
+  main section.view3 .content .text h3 {
+    font-family: font1;
+    font-size: 3.7rem;
+  }
+  main section.view3 .content .text p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+  }
+  main section.view3 .content .text .btn {
+    flex-direction: row;
+    align-items: center;
+  }
+  main .bg2 {
+    width: 100%;
+    background: linear-gradient(to right, #fcfce2, #f5fbfe);
+  }
+  main .bg2 section.view4 .content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .bg2 section.view4 .content .img {
+    width: 150%;
+    margin-bottom: 0;
+  }
+  main .bg2 section.view4 .content .img img {
+    width: 100%;
+  }
+  main .bg2 section.view4 .content .text {
+    padding: 0 9rem 0 4rem;
+  }
+  main .bg2 section.view4 .content .text h4 {
+    font-size: 1.23rem;
+  }
+  main .bg2 section.view4 .content .text h3 {
+    font-family: font1;
+    font-size: 3.7rem;
+  }
+  main .bg2 section.view4 .content .text p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+  }
+  main .bg2 section.view4 .content .text .btn {
+    flex-direction: row;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
