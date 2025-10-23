@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0%;
+        padding:0%;
+        box-sizing: border-box;
+        }
+        html,body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .btn{
+            height: 45%;
+            width: 80vw;
+            background-color: rgb(27, 27, 90);
+            border-radius: 25px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -47%;
+  width: 100vw;
+  height: 100%;
+  background-image: url('https://storage.googleapis.com/cms-storage-bucket/get-started-background.72521e62275b24d3c37d.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.txt{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 1vw;
+}
+        h1{
+            font-size: 3vw;
+            text-transform: capitalize;
+
+        }
+        p{
+            text-transform: capitalize;
+
+            font-size: 1.5vw;
+        }
+        .btns{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 1vw;
+        }
+        button{
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: none;
+        }
+        h2{
+            font-size: 1vw;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+<div class="btn">
+   <div class="txt">
+     <h1>get started</h1>
+    <p>instant access to the power of the flutter framework</p>
+    <div class="btns">
+        <button>
+            install
+        </button>
+        <h2>read the docs -></h2>
+    </div>
+   </div>
+    <!-- <img src="https://storage.googleapis.com/cms-storage-bucket/get-started-background.72521e62275b24d3c37d.png" alt=""> -->
+</div>
+</body>
+</html>

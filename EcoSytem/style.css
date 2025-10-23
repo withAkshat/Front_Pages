@@ -197,6 +197,171 @@ main .bg2 section.view4 .content .text .btn button:hover {
   background-color: transparent;
   cursor: pointer;
 }
+main section.view5 {
+  padding: 3rem 2rem 3rem 0;
+}
+main section.view5 .content {
+  margin: 0 1.7rem 0 1.7rem;
+}
+main section.view5 .content .img {
+  width: 100%;
+}
+main section.view5 .content .img img {
+  width: 100%;
+}
+main section.view5 .content .text h4 {
+  color: #4A4A4A;
+  font-size: 1.13rem;
+  margin-bottom: 1.26rem;
+}
+main section.view5 .content .text h3 {
+  font-size: 2.876rem;
+  margin-bottom: 2rem;
+}
+main section.view5 .content .text p {
+  color: #4A4A4A;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+main section.view5 .content .text .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: start;
+}
+main section.view5 .content .text .btn button {
+  color: white;
+  background-color: #0468d7;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border: 1px solid #0468d7;
+  border-radius: 50px;
+  margin-bottom: 0.88rem;
+  transition: all 0.2s ease-out;
+}
+main section.view5 .content .text .btn button:hover {
+  color: #0468d7;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .bg3 {
+  background: linear-gradient(#f5fbfe, #fcfce2);
+  display: flex;
+  justify-content: center;
+}
+main .bg3 section.view6 {
+  padding: 3rem 0;
+}
+main .bg3 section.view6 .content {
+  margin: 0 1.7rem 0 1.7rem;
+}
+main .bg3 section.view6 .content .img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .bg3 section.view6 .content .img img {
+  width: 100%;
+}
+main .bg3 section.view6 .content .text h4 {
+  color: #4A4A4A;
+  font-size: 1.13rem;
+  margin-bottom: 1.26rem;
+}
+main .bg3 section.view6 .content .text h3 {
+  font-size: 2.876rem;
+  font-family: font1;
+  margin-bottom: 2rem;
+}
+main .bg3 section.view6 .content .text p {
+  color: #4A4A4A;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+main .bg3 section.view6 .content .text .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: start;
+}
+main .bg3 section.view6 .content .text .btn button {
+  color: white;
+  background-color: #0468d7;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border: 1px solid #0468d7;
+  border-radius: 50px;
+  margin-bottom: 0.88rem;
+  transition: all 0.2s ease-out;
+}
+main .bg3 section.view6 .content .text .btn button:hover {
+  color: #0468d7;
+  background-color: transparent;
+  cursor: pointer;
+}
+main section.view7 .content {
+  padding: 2rem;
+}
+main section.view7 .content .card {
+  width: 100%;
+  color: white;
+  background-color: #042449;
+  border-radius: 50px;
+  padding: 6rem 3.2rem;
+  position: relative;
+  overflow: hidden;
+}
+main section.view7 .content .card .text {
+  position: relative;
+  z-index: 2;
+}
+main section.view7 .content .card .text h3 {
+  font-family: font1;
+  font-size: 2.9rem;
+  margin: 0 0 1.56rem;
+}
+main section.view7 .content .card .text p {
+  font-size: 1.18rem;
+  margin-bottom: 2rem;
+}
+main section.view7 .content .card .text .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: start;
+}
+main section.view7 .content .card .text .btn button {
+  font-size: 0.9rem;
+}
+main section.view7 .content .card .text .btn button:nth-child(1) {
+  color: blue;
+  background-color: white;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50px;
+}
+main section.view7 .content .card .text .btn button:nth-child(2) {
+  color: white;
+  padding: 0.6rem 2rem;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+main section.view7 .content .card .img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+main section.view7 .content .card .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 section {
   max-width: 1180px;
@@ -286,6 +451,70 @@ section {
     margin-bottom: 2rem;
   }
   main .bg2 section.view4 .content .text .btn {
+    flex-direction: row;
+    align-items: center;
+  }
+  main section.view5 .content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  main section.view5 .content .img {
+    margin-bottom: 0;
+  }
+  main section.view5 .content .img img {
+    width: 100%;
+  }
+  main section.view5 .content .text {
+    width: 150%;
+    padding: 0 9rem 0 4rem;
+  }
+  main section.view5 .content .text h4 {
+    font-size: 1.23rem;
+  }
+  main section.view5 .content .text h3 {
+    font-family: font1;
+    font-size: 3.7rem;
+  }
+  main section.view5 .content .text p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+  }
+  main section.view5 .content .text .btn {
+    flex-direction: row;
+    align-items: center;
+  }
+  main .bg3 {
+    width: 100%;
+    background: linear-gradient(to right, #fcfce2, #f5fbfe);
+  }
+  main .bg3 section.view6 .content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .bg3 section.view6 .content .img {
+    width: 150%;
+    margin-bottom: 0;
+  }
+  main .bg3 section.view6 .content .img img {
+    width: 100%;
+  }
+  main .bg3 section.view6 .content .text {
+    padding: 6rem 0 0 0;
+  }
+  main .bg3 section.view6 .content .text h4 {
+    font-size: 1.23rem;
+  }
+  main .bg3 section.view6 .content .text h3 {
+    font-family: font1;
+    font-size: 3.7rem;
+  }
+  main .bg3 section.view6 .content .text p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+  }
+  main .bg3 section.view6 .content .text .btn {
     flex-direction: row;
     align-items: center;
   }
