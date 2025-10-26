@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #0b1d26;
   font-family: figtree;
 }
 
@@ -19,7 +20,6 @@ main {
   height: 300vh;
   width: 100%;
   color: white;
-  background-color: #0b1d26;
   padding: 3rem;
   background-image: url(./assets/HGpng.png);
   background-size: contain;
@@ -56,97 +56,137 @@ main nav .navOps {
   align-items: center;
   justify-content: space-around;
 }
-main section:nth-child(2) {
+main section.view1 {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: 100vh;
   transform: translate(0, -10%);
 }
-main section:nth-child(2) .socials {
+main section.view1 .socials {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-column: 1/2;
   gap: 1rem;
 }
-main section:nth-child(2) .socials div {
+main section.view1 .socials div {
   position: absolute;
   top: 39%;
   left: -22px;
   rotate: 90deg;
 }
-main section:nth-child(2) .socials div p {
+main section.view1 .socials div p {
   font-size: 0.9rem;
 }
-main section:nth-child(2) .head {
+main section.view1 .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-column: 2/3;
   padding-left: 7rem;
 }
-main section:nth-child(2) .head .mainHeading {
+main section.view1 .head .mainHeading {
   margin-bottom: 2rem;
 }
-main section:nth-child(2) .head .mainHeading h1 {
+main section.view1 .head .mainHeading h1 {
   font-size: 4rem;
   font-weight: 500;
   font-family: century;
 }
-main section:nth-child(2) .head .topHeading {
+main section.view1 .head .topHeading {
   margin-top: -2rem;
   margin-bottom: 1rem;
 }
-main section:nth-child(2) .head .topHeading .line {
+main section.view1 .head .topHeading .line {
   display: inline-block;
   height: 6px;
   width: 60px;
   margin-right: 20px;
   border-top: 2px solid palegoldenrod;
 }
-main section:nth-child(2) .head .topHeading h4 {
+main section.view1 .head .topHeading h4 {
   color: palegoldenrod;
   font-size: 0.85rem;
   display: inline-block;
   letter-spacing: 6px;
 }
-main section:nth-child(2) .head .btmHeading {
+main section.view1 .head .btmHeading {
   display: flex;
   gap: 1rem;
 }
-main section:nth-child(2) .locate {
+main section.view1 .locate {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   grid-column: 3/4;
 }
-main section:nth-child(2) .locate div {
+main section.view1 .locate div {
   padding: 1rem;
   border-right: 3px solid rgba(255, 255, 255, 0.437);
 }
-main section:nth-child(2) .locate div:nth-child(1) {
+main section.view1 .locate div:nth-child(1) {
   border-right: 3px solid white;
 }
-main section:nth-child(3) {
-  background-color: blueviolet;
+main section.view2 {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 1fr;
+  margin-top: 20rem;
 }
-main section:nth-child(3) .bgDiv {
+main section.view2 .bgDiv {
   display: flex;
   grid-column: 2/3;
 }
-main section:nth-child(3) .bgDiv .desDiv {
-  font-family: fantasy;
-  font-size: 120px;
-  background-color: #4c7589;
-  height: 50vh;
+main section.view2 .bgDiv .desDiv {
+  position: relative;
   width: 50%;
+  padding: 5rem 0;
 }
-main section:nth-child(3) .bgDiv .imgDiv {
-  background: #ba4f4f;
-  height: 50vh;
-  width: 50%;
+main section.view2 .bgDiv .desDiv .head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 33%;
+  padding: 0 1rem 0 5.5rem;
+}
+main section.view2 .bgDiv .desDiv .head .top .line {
+  display: inline-block;
+  height: 6px;
+  width: 60px;
+  margin-right: 20px;
+  border-top: 2px solid palegoldenrod;
+}
+main section.view2 .bgDiv .desDiv .head .top h4 {
+  color: palegoldenrod;
+  font-size: 0.85rem;
+  display: inline-block;
+  letter-spacing: 6px;
+}
+main section.view2 .bgDiv .desDiv .head .que h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  font-family: century;
+}
+main section.view2 .bgDiv .desDiv .head .desc p {
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+main section.view2 .bgDiv .desDiv > h1 {
+  font-family: fantasy;
+  font-size: 170px;
+  font-weight: 400;
+  opacity: 0.15;
+}
+main section.view2 .bgDiv .imgDiv {
+  height: 80vh;
+  width: 48%;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main section.view2 .bgDiv .imgDiv img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translate(0, -10%);
 }/*# sourceMappingURL=style.css.map */
