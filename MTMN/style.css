@@ -31,23 +31,34 @@ main nav {
   align-items: center;
   justify-content: space-between;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 100;
 }
 main nav .navL {
   font-family: century;
   font-size: 1rem;
+  transition: all 0.2s ease;
 }
 main nav .navL h2 {
-  font-weight: 400;
+  font-weight: 300;
+}
+main nav .navL:hover {
+  cursor: pointer;
 }
 main nav .navR {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
+  transition: all 0.2s ease;
 }
 main nav .navR i {
   font-size: 1.2rem;
   font-weight: 100;
+}
+main nav .navR:hover {
+  color: #f6ce7d;
+  cursor: pointer;
 }
 main nav .navOps {
   width: 20%;
@@ -55,6 +66,14 @@ main nav .navOps {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+}
+main nav .navOps p {
+  transition: all 0.2s ease;
+}
+main nav .navOps p:hover {
+  transform: translateY(-10%);
+  color: #f6ce7d;
+  cursor: pointer;
 }
 main section.view1 {
   display: grid;
@@ -173,6 +192,15 @@ main section.view2 .bgDiv .desDiv .head .desc p {
   font-size: 0.84rem;
   line-height: 1.7;
 }
+main section.view2 .bgDiv .desDiv .head .btm {
+  display: flex;
+  gap: 0.4rem;
+  color: palegoldenrod;
+  transition: all 0.3s ease;
+}
+main section.view2 .bgDiv .desDiv .head .btm:hover {
+  transform: translateX(1%);
+}
 main section.view2 .bgDiv .desDiv > h1 {
   font-family: fantasy;
   font-size: 170px;
@@ -189,4 +217,224 @@ main section.view2 .bgDiv .imgDiv img {
   -o-object-fit: contain;
      object-fit: contain;
   transform: translate(0, -10%);
+}
+main section.view3 {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 10rem;
+}
+main section.view3 .bgDiv {
+  display: flex;
+  grid-column: 2/3;
+}
+main section.view3 .bgDiv .desDiv {
+  position: relative;
+  width: 50%;
+  padding: 5rem 0;
+}
+main section.view3 .bgDiv .desDiv .head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 33%;
+  padding: 0 1rem 0 5.5rem;
+}
+main section.view3 .bgDiv .desDiv .head .top .line {
+  display: inline-block;
+  height: 6px;
+  width: 60px;
+  margin-right: 20px;
+  border-top: 2px solid palegoldenrod;
+}
+main section.view3 .bgDiv .desDiv .head .top h4 {
+  color: palegoldenrod;
+  font-size: 0.85rem;
+  display: inline-block;
+  letter-spacing: 6px;
+}
+main section.view3 .bgDiv .desDiv .head .que h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  font-family: century;
+}
+main section.view3 .bgDiv .desDiv .head .desc p {
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+main section.view3 .bgDiv .desDiv .head .btm {
+  display: flex;
+  gap: 0.4rem;
+  color: palegoldenrod;
+  transition: all 0.3s ease;
+}
+main section.view3 .bgDiv .desDiv .head .btm:hover {
+  transform: translateX(1%);
+}
+main section.view3 .bgDiv .desDiv > h1 {
+  font-family: fantasy;
+  font-size: 170px;
+  font-weight: 400;
+  opacity: 0.15;
+}
+main section.view3 .bgDiv .imgDiv {
+  height: 80vh;
+  width: 48%;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main section.view3 .bgDiv .imgDiv img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translate(-5%, -10%);
+}
+main section.view4 {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 10rem;
+}
+main section.view4 .bgDiv {
+  display: flex;
+  grid-column: 2/3;
+}
+main section.view4 .bgDiv .desDiv {
+  position: relative;
+  width: 50%;
+  padding: 5rem 0;
+}
+main section.view4 .bgDiv .desDiv .head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 33%;
+  padding: 0 1rem 0 5.5rem;
+}
+main section.view4 .bgDiv .desDiv .head .top .line {
+  display: inline-block;
+  height: 6px;
+  width: 60px;
+  margin-right: 20px;
+  border-top: 2px solid palegoldenrod;
+}
+main section.view4 .bgDiv .desDiv .head .top h4 {
+  color: palegoldenrod;
+  font-size: 0.85rem;
+  display: inline-block;
+  letter-spacing: 6px;
+}
+main section.view4 .bgDiv .desDiv .head .que h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  font-family: century;
+}
+main section.view4 .bgDiv .desDiv .head .desc p {
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+main section.view4 .bgDiv .desDiv .head .btm {
+  display: flex;
+  gap: 0.4rem;
+  color: palegoldenrod;
+  transition: all 0.3s ease;
+}
+main section.view4 .bgDiv .desDiv .head .btm:hover {
+  transform: translateX(1%);
+}
+main section.view4 .bgDiv .desDiv > h1 {
+  font-family: fantasy;
+  font-size: 170px;
+  font-weight: 400;
+  opacity: 0.15;
+}
+main section.view4 .bgDiv .imgDiv {
+  height: 80vh;
+  width: 48%;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+main section.view4 .bgDiv .imgDiv img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translate(0, -10%);
+}
+main section.view5 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 4em;
+}
+main section.view5 div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 100%;
+}
+main section.view5 div .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  grid-column: 1/2;
+}
+main section.view5 div .left h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: century;
+}
+main section.view5 div .left .desc {
+  line-height: 1.8;
+}
+main section.view5 div .left .copy {
+  color: gray;
+  display: inline-block;
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+main section.view5 div .left .copy a {
+  color: gray;
+  transition: all 0.2s ease;
+}
+main section.view5 div .left .copy a:hover {
+  color: rgb(136, 103, 21);
+}
+main section.view5 div .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  grid-column: 2/3;
+  margin-top: 1rem;
+}
+main section.view5 div .middle h2 {
+  font-size: 1.6rem;
+  color: #f6ce7d;
+  margin-bottom: 0.3rem;
+}
+main section.view5 div .middle p {
+  transition: all 0.2s ease;
+}
+main section.view5 div .middle p:hover {
+  color: #f6ce7d;
+  cursor: pointer;
+}
+main section.view5 div .right {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3/4;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+main section.view5 div .right h2 {
+  font-size: 1.6rem;
+  color: #f6ce7d;
+  margin-bottom: 0.3rem;
+}
+main section.view5 div .right p {
+  transition: all 0.2s ease;
+}
+main section.view5 div .right p:hover {
+  color: #f6ce7d;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

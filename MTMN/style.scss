@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    height:300vh;
+    height: 300vh;
     width: 100%;
     color: white;
     padding: 3rem;
@@ -38,14 +38,25 @@ main {
         @include centerElement();
         justify-content: space-between;
         font-size: 0.9rem;
+        position: relative;
+        z-index: 100;
+
+ 
+
 
         .navL {
             font-family: century;
             font-size: 1rem;
 
             h2 {
-                font-weight: 400;
+                font-weight: 300;
+
             }
+            transition: all 0.2s ease;
+
+        }
+        .navL:hover{
+            cursor: pointer;
         }
 
         .navR {
@@ -56,12 +67,29 @@ main {
                 font-size: 1.2rem;
                 font-weight: 100;
             }
+
+            transition: all 0.2s ease;
+        }
+
+        .navR:hover{
+                color: #f6ce7d;
+                cursor: pointer;
         }
 
         .navOps {
             width: 20%;
             @include centerElement();
             justify-content: space-around;
+
+            p{
+                transition: all 0.2s ease;
+            }
+
+            p:hover{
+                transform: translateY(-10%);
+                color: #f6ce7d;
+                cursor: pointer;
+            }
         }
     }
 
@@ -166,7 +194,7 @@ main {
         grid-template-columns: 1fr 8fr 1fr;
         grid-template-rows: 1fr;
         margin-top: 20rem;
-        
+
 
         .bgDiv {
             display: flex;
@@ -178,12 +206,13 @@ main {
                 padding: 5rem 0;
 
                 .head {
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
                     gap: 1rem;
                     position: absolute;
                     top: 33%;
                     padding: 0 1rem 0 5.5rem;
+
                     // margin:0 0 2rem 0;
                     .top {
 
@@ -204,9 +233,9 @@ main {
                         }
                     }
 
-                    .que{
-                        
-                        h1{
+                    .que {
+
+                        h1 {
                             font-weight: 400;
                             font-size: 2.7rem;
                             font-family: century;
@@ -214,11 +243,23 @@ main {
                         }
                     }
 
-                    .desc{
-                        p{
-                            font-size:0.84rem;
+                    .desc {
+                        p {
+                            font-size: 0.84rem;
                             line-height: 1.7;
                         }
+                    }
+
+
+                    .btm {
+                        display: flex;
+                        gap: 0.4rem;
+                        color: palegoldenrod;
+                        transition:all 0.3s ease;
+                    }
+
+                    .btm:hover{
+                        transform:translateX(1%);
                     }
                 }
             }
@@ -235,7 +276,8 @@ main {
                 width: 48%;
                 overflow: hidden;
                 margin-left: 2rem;
-                img{
+
+                img {
                     object-fit: contain;
                     transform: translate(0, -10%);
                 }
@@ -243,4 +285,291 @@ main {
         }
     }
 
+    section.view3 {
+        // background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10rem;
+
+
+        .bgDiv {
+            display: flex;
+            grid-column: 2/3;
+
+            .desDiv {
+                position: relative;
+                width: 50%;
+                padding: 5rem 0;
+
+                .head {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: absolute;
+                    top: 33%;
+                    padding: 0 1rem 0 5.5rem;
+
+                    // margin:0 0 2rem 0;
+                    .top {
+
+                        .line {
+                            display: inline-block;
+                            height: 6px;
+                            width: 60px;
+                            margin-right: 20px;
+                            border-top: 2px solid palegoldenrod;
+
+                        }
+
+                        h4 {
+                            color: palegoldenrod;
+                            font-size: 0.85rem;
+                            display: inline-block;
+                            letter-spacing: 6px;
+                        }
+                    }
+
+                    .que {
+
+                        h1 {
+                            font-weight: 400;
+                            font-size: 2.7rem;
+                            font-family: century;
+
+                        }
+                    }
+
+                    .desc {
+                        p {
+                            font-size: 0.84rem;
+                            line-height: 1.7;
+                        }
+                    }
+
+                    
+                    .btm {
+                        display: flex;
+                        gap: 0.4rem;
+                        color: palegoldenrod;
+                        transition:all 0.3s ease;
+                    }
+
+                    .btm:hover{
+                        transform:translateX(1%);
+                    }
+                }
+            }
+
+            .desDiv>h1 {
+                font-family: fantasy;
+                font-size: 170px;
+                font-weight: 400;
+                opacity: 0.15;
+            }
+
+            .imgDiv {
+                height: 80vh;
+                width: 48%;
+                overflow: hidden;
+                margin-left: 2rem;
+
+                img {
+                    object-fit: contain;
+                    transform: translate(-5%, -10%);
+                }
+            }
+        }
+    }
+
+    section.view4 {
+        // background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10rem;
+
+
+        .bgDiv {
+            display: flex;
+            grid-column: 2/3;
+
+            .desDiv {
+                position: relative;
+                width: 50%;
+                padding: 5rem 0;
+
+                .head {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: absolute;
+                    top: 33%;
+                    padding: 0 1rem 0 5.5rem;
+
+                    // margin:0 0 2rem 0;
+                    .top {
+
+                        .line {
+                            display: inline-block;
+                            height: 6px;
+                            width: 60px;
+                            margin-right: 20px;
+                            border-top: 2px solid palegoldenrod;
+
+                        }
+
+                        h4 {
+                            color: palegoldenrod;
+                            font-size: 0.85rem;
+                            display: inline-block;
+                            letter-spacing: 6px;
+                        }
+                    }
+
+                    .que {
+
+                        h1 {
+                            font-weight: 400;
+                            font-size: 2.7rem;
+                            font-family: century;
+
+                        }
+                    }
+
+                    .desc {
+                        p {
+                            font-size: 0.84rem;
+                            line-height: 1.7;
+                        }
+                    }
+
+                   
+                    .btm {
+                        display: flex;
+                        gap: 0.4rem;
+                        color: palegoldenrod;
+                        transition:all 0.3s ease;
+                    }
+
+                    .btm:hover{
+                        transform:translateX(1%);
+                    }
+                }
+            }
+
+            .desDiv>h1 {
+                font-family: fantasy;
+                font-size: 170px;
+                font-weight: 400;
+                opacity: 0.15;
+            }
+
+            .imgDiv {
+                height: 80vh;
+                width: 48%;
+                overflow: hidden;
+                margin-left: 2rem;
+
+                img {
+                    object-fit: contain;
+                    transform: translate(0, -10%);
+                }
+            }
+        }
+    }
+
+
+    section.view5{
+        display:flex;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 0 4em;
+
+        div{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: 100%;
+            
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 1.8rem;
+                grid-column: 1/2;
+
+                h2{
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-family: century;
+                }
+
+                .desc{
+                    line-height: 1.8;
+                }
+
+                .copy{
+                    color:gray;
+                    display: inline-block;
+                    line-height: 1.8;
+                    margin-top: 2rem;
+                    a{
+                        color: gray;
+                        transition: all 0.2s ease;
+                    }
+                    
+                }
+                .copy a:hover{
+                        color: rgb(136, 103, 21);
+
+                    }
+            }
+            .middle{
+                display: flex;
+                flex-direction: column;
+                gap: 0.9rem;
+                grid-column: 2/3;
+                margin-top: 1rem;
+
+                h2{
+                    font-size: 1.6rem;
+                    color:#f6ce7d;
+                    margin-bottom: 0.3rem;
+                }
+
+                 p{
+                    transition:all 0.2s ease;
+                }
+
+                p:hover{
+                    color:#f6ce7d;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                   display: flex;
+                flex-direction: column;
+                grid-column: 3/4;
+                gap: 0.9rem;
+                margin-top: 1rem;
+
+                 h2{
+                    font-size: 1.6rem;
+                    color:#f6ce7d;
+                    margin-bottom: 0.3rem;
+                }
+
+                p{
+                    transition:all 0.2s ease;
+                }
+
+                 p:hover{
+                    color:#f6ce7d;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
 }
