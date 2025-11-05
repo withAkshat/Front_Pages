@@ -351,14 +351,18 @@ main section.view7 .content .card .text .btn button:nth-child(2) {
 }
 main section.view7 .content .card .img {
   height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
 }
 main section.view7 .content .card .img img {
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 100%;
-  width: 100%;
+  width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -367,6 +371,20 @@ section {
   max-width: 1180px;
 }
 
+@media (max-width: 605px) {
+  main section.view7 .content .card {
+    width: 100%;
+  }
+  main section.view7 .content .card .img {
+    width: 100%;
+  }
+  main section.view7 .content .card .img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
 @media (min-width: 1024px) {
   main {
     display: flex;
@@ -517,5 +535,14 @@ section {
   main .bg3 section.view6 .content .text .btn {
     flex-direction: row;
     align-items: center;
+  }
+  main section.view7 {
+    width: 100%;
+  }
+  main section.view7 .content {
+    width: 100%;
+  }
+  main section.view7 .content .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

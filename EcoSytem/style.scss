@@ -410,11 +410,11 @@ main {
                 background-color: #042449;
                 border-radius: 50px;
                 padding: 6rem 3.2rem;
-                position:relative;
-                overflow:hidden;
+                position: relative;
+                overflow: hidden;
 
                 .text {
-                    position:relative;
+                    position: relative;
                     z-index: 2;
 
                     h3 {
@@ -457,33 +457,69 @@ main {
 
                 }
 
-                .img{
-                    height:100%;
-                    // width: 100%;
-                    position:absolute;
-                    top:0;
-                    right:0;
-                    z-index:1;
-                    
-                    img{
-                        // position:absolute;
-                        // top:0;
-                        // right:0;
+                .img {
+                    height: 100%;
+                    width: 500px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                    // background-color: rgb(107, 73, 73);   
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
                         height: 100%;
-                        width:100%;
+                        width: 500px;
                         object-fit: cover;
-                        
+
                     }
                 }
             }
         }
     }
-
 }
 
 section {
     max-width: 1180px;
 }
+
+@media(max-width:605px) {
+
+    main{
+
+        section.view7 {
+
+            // background-color: #0468d7;
+            .content{
+                .card {
+                width: 100%;
+                .img {
+                    width: 100%;
+                    // display: block;
+                    // overflow:hidden;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: fill;
+                    }
+                }
+            }
+            }
+            
+        }
+    }
+}
+
+// @media (min-width:606px) and (max-width:1024px) {
+//     main{
+        
+//     }
+//     }
+// }
+
+
 
 // For Bigger Screens
 @media (min-width:1024px) {
@@ -674,8 +710,21 @@ section {
                     }
                 }
             }
+
         }
 
+        section.view7 {
+            width: 100%;
+
+            .content {
+                width: 100%;
+
+                .card {
+                    width: 100%;
+                }
+            }
+        }
 
     }
 }
+
