@@ -22,11 +22,11 @@ main {
 main .img {
   height: 100vh;
   width: 100%;
+  background-color: antiquewhite;
   background-image: url(./Assets/2k\ girl.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: antiquewhite;
 }
 main section.view1 {
   width: 100%;
@@ -93,6 +93,12 @@ main section.view2 .content .info .para {
 }
 main section.view2 .content .info .para p {
   font-size: 0.75rem;
+}
+main section.view3 {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: #6e92a2;
 }
 
 @media (min-width: 1024px) {
