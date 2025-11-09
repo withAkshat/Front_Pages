@@ -32,7 +32,6 @@ main {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
 
     section.view1 {
@@ -77,6 +76,7 @@ main {
         color: white;
         height: 100%;
         background-color: #070e14;
+        
 
         .content {
             width: 100%;
@@ -105,11 +105,11 @@ main {
                 }
 
                 .line {
-                    border-top: 1px solid rgba(139, 139, 139, 0.982);
                     width: 50px;
-                    // margin-left: 50%;
-                    margin-left: 20%;
-                    transform: translateX(-50%);
+                    border-top: 1px solid rgba(139, 139, 139, 0.982);
+                    margin: auto;
+                    // margin-left: 20%;
+                    // transform: translateX(-50%);
                 }
 
                 .para {
@@ -128,10 +128,151 @@ main {
 
     section.view3{
         width: 100%;
-        height: 100vh;
+        // height: 100vh;
         color: white;
-        background-color: #6e92a2;
+        background-color: #070e14;
+        position:relative;
+        top:100%;
+
+        .content{
+            padding: 2rem 0;
+            .head{
+                h1{
+                    font-size:1.6rem;
+                    font-weight: 300;
+                    text-align: center;
+                }  
+
+                h3{
+                    color:rgba(255, 255, 255, 0.493);
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                    text-align: center;
+
+                }
+            }
+
+            .line{
+                width: 55px;
+                border-top: 1px solid rgba(139, 139, 139, 0.982);
+                margin: 1rem auto;
+            }
+
+            .cards{
+                display: flex;
+                flex-direction: column;
+                gap:2rem;
+                align-items: center;
+
+                .card{
+                    height:75vh;
+                    width: 90%;
+                    background-color: #07a0e2;
+                     background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    box-shadow:3px 4px 10px rgb(134, 134, 134);
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    padding: 1rem;
+                }
+
+                .card:nth-child(1){
+                    background-image: url(./Assets/cargoship.jpg);
+                }
+                
+                .card:nth-child(2){
+                    background-image: url(./Assets/beach.jpg);
+                }
+                
+                .card:nth-child(3){
+                    background-image: url(./Assets/sea.jpg);
+                }
+            }
+        }
     }
+
+    section.view4{
+        position: relative;
+        top:100%;
+        background-color:#070e14;
+        color:white;
+        padding: 4rem 0;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:0.6rem;
+            h1{
+                font-size: 1.7rem;
+                // background-color: #6e92a2;
+                font-weight: 300;
+            }
+
+            h4{
+                color: rgba(255, 255, 255, 0.352);
+                font-size: 0.7rem;
+                font-weight: 300;
+                letter-spacing: 2px;
+                margin-bottom: 0.4rem;
+            }
+            .line{
+                width: 55px;
+                border-top: 1px solid rgba(139, 139, 139, 0.982);
+                margin-bottom: 0.5rem;
+            }
+
+            input{
+                width:65%;
+                color:white;
+                background-color: transparent;
+                border:1px solid white;
+                padding:0.7rem 1rem;
+                padding-left: 0.9rem;
+                
+            }
+
+            button{
+                width:65%;
+                color:white;
+                background-color: transparent;
+                border: 1px solid white;
+                padding: 0.5rem 1rem;
+
+            }
+
+            input::placeholder{
+                font-size: 0.65rem;
+            }
+        }
+    }
+
+    section.view5{
+        color: white;
+        background-color: #12161b;
+        position: relative;
+        top:100%;
+
+        .content{
+            padding: 3.5rem 2rem ;
+            .logo{
+                display: none;
+            }
+
+            .footer{
+                text-align: center;
+                p{
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
 }
 
 @media(min-width:1024px) {
@@ -139,7 +280,7 @@ main {
 
         // position: relative;
         .img {
-            position: absolute;
+            // position: absolute;
             height: 200vh;
             background-size: cover;
         }
@@ -259,5 +400,75 @@ main {
 
             }
         }
+
+        section.view3{
+            top:0;
+            padding: 1rem 0;
+
+            .content{
+                .cards{
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 3rem;
+                    padding: 0 2rem;
+
+                    .card{
+                        width: 25%;
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+
+        section.view4{
+            top:0;
+            .content{
+                h1{
+                    font-size: 2.4rem;
+                }
+
+                h4{
+                    font-size:0.9rem;
+                    letter-spacing: 3px;
+                }
+
+                input{
+                    width: 40%;
+                }
+
+                button{
+                    width: 10%;
+                }
+            }
+        }
+
+        section.view5{
+        color:white;
+        background-color: #12161b;
+        top:0;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            padding: 5rem 5rem;
+
+            .logo{
+                display: block;
+                p{
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+            }
+
+            .footer{
+                display: flex;
+                gap: 2rem;
+                margin-top: 1rem;
+
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
     }
 }
