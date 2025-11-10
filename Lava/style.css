@@ -74,6 +74,7 @@ main section.view2 .content .info {
   top: 125%;
 }
 main section.view2 .content .info .head h2 {
+  font-size: clamp(25.6px, 8vw, 33.152px);
   font-weight: 300;
 }
 main section.view2 .content .info .head h4 {
@@ -104,7 +105,7 @@ main section.view3 .content {
   padding: 2rem 0;
 }
 main section.view3 .content .head h1 {
-  font-size: 1.6rem;
+  font-size: clamp(25.6px, 8vw, 33.152px);
   font-weight: 300;
   text-align: center;
 }
@@ -128,7 +129,7 @@ main section.view3 .content .cards {
 }
 main section.view3 .content .cards .card {
   height: 75vh;
-  width: 90%;
+  width: clamp(288px, 90%, 379.438px);
   background-color: #07a0e2;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +164,7 @@ main section.view4 .content {
   gap: 0.6rem;
 }
 main section.view4 .content h1 {
-  font-size: 1.7rem;
+  font-size: clamp(25.6px, 8vw, 33.152px);
   font-weight: 300;
 }
 main section.view4 .content h4 {
@@ -215,7 +216,7 @@ main section.view5 .content .footer {
   text-align: center;
 }
 main section.view5 .content .footer p {
-  font-size: 0.9rem;
+  font-size: clamp(14.4px, 4.5vw, 18.964px);
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }

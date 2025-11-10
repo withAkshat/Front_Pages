@@ -93,6 +93,7 @@ main {
 
                 .head {
                     h2 {
+                        font-size: clamp(25.6px, 8vw, 33.152px);
                         font-weight: 300;
                     }
 
@@ -138,7 +139,7 @@ main {
             padding: 2rem 0;
             .head{
                 h1{
-                    font-size:1.6rem;
+                    font-size: clamp(25.6px, 8vw, 33.152px);
                     font-weight: 300;
                     text-align: center;
                 }  
@@ -167,7 +168,7 @@ main {
 
                 .card{
                     height:75vh;
-                    width: 90%;
+                    width: clamp(288px,90%, 379.438px);
                     background-color: #07a0e2;
                      background-position: center;
                     background-repeat: no-repeat;
@@ -207,7 +208,7 @@ main {
             align-items: center;
             gap:0.6rem;
             h1{
-                font-size: 1.7rem;
+                font-size: clamp(25.6px, 8vw, 33.152px);
                 // background-color: #6e92a2;
                 font-weight: 300;
             }
@@ -265,7 +266,7 @@ main {
             .footer{
                 text-align: center;
                 p{
-                    font-size: 0.9rem;
+                    font-size: clamp(14.4px,4.5vw,18.964px);
                     margin-bottom: 0.5rem;
                     letter-spacing: 1px;
                 }
