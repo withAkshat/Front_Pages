@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bck {
+  height: 100%;
+  width: 100%;
+  background-image: url(./mountain\ final.png);
+  background-size: cover;
+  position: absolute;
+  filter: blur(3px);
+}
+main .prev {
+  height: 80%;
+  width: 80%;
+  position: relative;
+  background-image: url(./mountain\ final.png);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .prev .glass {
+  height: 100%;
+  width: 45%;
+  background-color: rgba(42, 48, 93, 0.096);
+  background: linear-gradient(to bottom, transparent, #122430);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  position: relative;
+}
+main .prev .glass .content {
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: absolute;
+  bottom: 4%;
+  left: 14%;
+}
+main .prev .glass .content h4 {
+  font-size: 0.96rem;
+  font-weight: 300;
+}
+main .prev .glass .content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+main .prev .glass .content button {
+  width: 35%;
+  color: black;
+  background-color: #919090;
+  border: none;
+  font-weight: 500;
+  padding: 0.7rem 0 0.7rem 0;
+  border-radius: 5px;
+}
+main .prev h1 {
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  font-weight: 600;
+  font-size: 11.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./mountain\ final.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  display: flex;
+}
+main .prev h1 span {
+  padding-left: 19.7rem;
+  padding-top: 4rem;
+}
+main .prev .land {
+  height: 400px;
+  width: 400px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  font-size: 11.6rem;
+  top: 40%;
+  left: 44.5%;
+}
+main .prev nav {
+  width: 100%;
+  padding: 2rem 5rem;
+  font-size: 0.78rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+main .prev nav .left {
+  display: flex;
+  gap: 1rem;
+}
+main .prev nav .left .head {
+  padding-top: 2px;
+}
+main .prev nav .left .head h3 {
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+main .prev nav .left .symbols {
+  display: flex;
+  gap: 0.3rem;
+}
+main .prev nav .left .symbols .sym {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+main .prev nav .right {
+  display: flex;
+  gap: 3rem;
+  font-weight: 500;
+}
+main .prev .pagePoint {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .prev .pagePoint div {
+  height: 20px;
+  width: 20px;
+  rotate: 45deg;
+  border: 2px solid white;
+}
+main .prev .pagePoint div:nth-child(3), main .prev .pagePoint div:nth-child(4) {
+  background-color: white;
+}
+main .prev .pagePoint div:nth-child(1), main .prev .pagePoint div:nth-child(5) {
+  width: 1px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  height: 30px;
+  rotate: 0deg;
+  margin-left: 10px;
+}
+main .prev .pageSlide {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 9%;
+  right: 9%;
+}
+main .prev .pageSlide .arrow {
+  height: 35px;
+  width: 35px;
+  flex-shrink: 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.3rem 0 0 0.3rem;
+}
+main .prev .pageSlide .arrow i {
+  color: white;
+  font-size: 1.4rem;
+}
+main .prev .pageSlide .arrow:nth-child(1) {
+  background-color: rgba(145, 144, 144, 0.6941176471);
+  border: none;
+}
+main .prev .pageSlide .arrow:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.5843137255);
+  border: none;
+}/*# sourceMappingURL=style.css.map */
