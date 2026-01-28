@@ -1,0 +1,51 @@
+nav{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid rgba(89, 89, 89, 0.249);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left, .right{
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+    }
+
+    .center{
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        span{
+            height: 40%;
+            
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .right{
+
+        .contact{
+            padding-inline: 1rem;
+            padding-block: 0.6rem;
+            border: 2px solid rgb(255, 183, 0);
+            border-radius: 50px;
+
+            i{
+                color: purple;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

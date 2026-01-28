@@ -29,6 +29,7 @@ main .prev {
   height: 80%;
   width: 80%;
   position: relative;
+  padding: 3px;
   background-image: url(./mountain\ final.png);
   background-size: cover;
   background-position: center;
