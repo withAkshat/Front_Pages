@@ -1,4 +1,4 @@
-nav{
+nav {
     height: 100px;
     width: 100%;
     border-bottom: 2px solid rgba(89, 89, 89, 0.249);
@@ -7,45 +7,67 @@ nav{
     justify-content: space-between;
     align-items: center;
 
-    .left, .right{
+    .left,
+    .right {
         display: flex;
         align-items: center;
         gap: 1.3rem;
     }
 
-    .center{
+    .center {
         height: 100%;
 
         display: flex;
         align-items: center;
         gap: 1rem;
-        span{
+
+        span {
             height: 40%;
-            
-            img{
+
+            img {
                 height: 100%;
                 object-fit: contain;
             }
         }
 
-        p{
+        p {
             font-size: 1.5rem;
             font-weight: 600;
         }
     }
 
-    .right{
+    .right {
 
-        .contact{
+        .contact {
+            width: 120px;
+            background-color: transparent;
+
             padding-inline: 1rem;
             padding-block: 0.6rem;
             border: 2px solid rgb(255, 183, 0);
             border-radius: 50px;
 
-            i{
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+
+            .icon {
                 color: purple;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                position: absolute;
+                left: 70%;
+                transition: all 0.3s ease-in-out;
+            }
+
+        }
+
+        .contact:hover{
+            .icon{
+                transform: translate(40%, -40%);
             }
         }
+   
     }
 }

@@ -16,7 +16,7 @@ const Nav = () => {
         </div>
         <div className="right">
             <span>Careers</span>
-            <span className="contact">Contact Us <i class="ri-arrow-right-up-long-line"></i> </span>
+            <button className="contact">Contact Us <i class="icon ri-arrow-right-up-long-line"></i></button>
         </div>
     </nav>
   )
