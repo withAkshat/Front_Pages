@@ -1,0 +1,278 @@
+.page2 {
+    width: 100%;
+    margin-top: 1rem;
+    padding-block: 1rem;
+    margin-top: 2rem;
+
+    .mainContent {
+        border: 2px solid rgba(128, 128, 128, 0.458);
+        border-radius: 50px;
+        padding: 4rem 2rem;
+
+        .section1 {
+
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                h3 {
+                    font-size: 2.3rem;
+                    font-weight: 400;
+                }
+
+                p {
+                    width: 27%;
+                    color: rgb(125, 125, 125);
+                    padding: 0;
+                }
+            }
+
+            .cards {
+                display: flex;
+                gap: 1rem;
+                width: 100%;
+
+                .card {
+                    width: 33%;
+                    // height: 200px;
+                    padding: 1.2rem;
+                    border: 1px solid rgb(196, 136, 216);
+                    border-radius: 20px;
+                    transition: all 0.3s ease-in-out;
+
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 1rem;
+                        margin-bottom: 1rem;
+                        border-bottom: 2px solid rgb(196, 136, 216);
+
+                        h3 {
+                            width: 40%;
+                            font-size: 1.9rem;
+                            font-weight: 400;
+
+                        }
+
+                        .btn {
+                            height: 65px;
+                            aspect-ratio: 1/1;
+                            background-color: rgb(143, 42, 226);
+                            border-radius: 50%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+
+
+                            i {
+                                color: white;
+                                font-size: 2rem;
+                                font-weight: 100;
+                                transform: rotate(0deg);
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+
+                    }
+
+
+                    .bottom {
+
+                        p {
+                            color: rgb(74, 74, 74);
+                            margin-bottom: 1rem;
+                        }
+
+                        .img {
+                            width: 100%;
+                            height: 250px;
+                            background-color: aqua;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            transition: all 0.3s ease-in-out;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: fill;
+                                // display: none;
+                            }
+                        }
+                    }
+                }
+
+                .card:hover {
+                    transform: scale(1.02);
+
+                    .top {
+                        .btn {
+                            i {
+                                transform: rotate(45Deg);
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        .img {
+                            transform: scale(1.02);
+                        }
+                    }
+
+                }
+
+
+                .card2 {
+                    border-bottom-left-radius: 55%;
+                    transition: all 0.3s ease-in-out;
+                    position: relative;
+
+                    .arrow {
+                        width: 70px;
+                        aspect-ratio: 1/1;
+                        background-color: white;
+                        border: 2px solid rgb(143, 42, 226);
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        position: absolute;
+                        bottom: 10%;
+                        left: 10%;
+                        z-index: 1;
+
+                        transition: all 0.3s ease-in-out;
+
+                        i {
+                            color: rgb(143, 42, 226);
+                            font-size: 2rem;
+                            transform: rotate(0deg);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    .bottom {
+
+
+                        .img {
+                            border-bottom-left-radius: 300px;
+                            transition: all 0.3s ease-in-out;
+                            transform: scale(1);
+                        }
+                    }
+                }
+
+                .card2:hover {
+                    border-bottom-left-radius: 20px;
+
+                    .bottom {
+
+
+                        .img {
+                            border-bottom-left-radius: 20px;
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .arrow {
+                        width: 80px;
+
+                        i {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .section2{
+            padding-block: 2rem;
+
+            .content{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding-block: 2rem;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+
+                    .line{
+                        width: 20px;
+                        height: 1px;
+                        border: 1px solid rgba(128, 128, 128, 0.695);
+                    }
+
+                    p{
+                        color: gray;
+                    }
+                }
+
+                .desc{
+                    width: 55%;
+                    position: relative;
+
+                    .purpleLine{
+                        width: 400px;
+                        position:absolute;
+                        bottom: -40%;
+                        left: -10%;
+                        transform: rotate(10deg);
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    
+                    .star{
+                        width: 45px;
+                        position:absolute;
+                        bottom: -7%;
+                        right: 33%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    h1{
+                        font-size: 2.3rem;
+                        text-align: center;
+                        font-weight: 400;
+                        line-height: 1.2;
+
+                        .yellowArrow, .logo{
+                            width: 50px;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .orange{
+                            color: orange;
+                        }
+
+                        .purple{
+                            color: rgb(216, 15, 216);
+                        }
+                        
+                        .gray{
+                            color: rgb(183, 183, 183);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

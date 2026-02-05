@@ -36,9 +36,9 @@ function Page1() {
 
         <div className="text">
             <p>Ignition the Spark of Inspiration</p>
-            <h1>Unleash Your Brand <span className="centerLogo"> <img src="/centerLogo.png" alt="" /></span> with Our <span className="magicoText">Mágico</span> Design</h1>
+            <h1>Unleash Your Brand <span className="centerLogo"> <img src="/centerLogo.png" alt="" /></span> with Our <span className="magicoText">Mágico</span> Design<div className="magico"></div></h1>
         </div>
-        <div className="magico"></div>
+       
     </div>
 }
 
