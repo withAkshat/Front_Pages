@@ -1,3 +1,14 @@
+@keyframes star {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
 .page2 {
     width: 100%;
     margin-top: 1rem;
@@ -238,6 +249,8 @@
                         position:absolute;
                         bottom: -7%;
                         right: 33%;
+                        animation: star 4s infinite linear;
+
                         img{
                             width: 100%;
                         }
@@ -257,6 +270,10 @@
                             img{
                                 width: 100%;
                             }
+                        }
+
+                        .yellowArrow{
+                            animation: star 4s infinite reverse;
                         }
 
                         .orange{
