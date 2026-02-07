@@ -4,9 +4,9 @@ const Nav = () => {
   return (
     <nav>
         <div className="left">
-            <span>Services</span>
-            <span>Work</span>
-            <span>About</span>
+            <span className="btn">Services</span>
+            <span className="btn">Work</span>
+            <span className="btn">About</span>
         </div>
         <div className="center">
             <span>
@@ -15,7 +15,7 @@ const Nav = () => {
             <p>Astratto</p>
         </div>
         <div className="right">
-            <span>Careers</span>
+            <span className="btn">Careers</span>
             <button className="contact">Contact Us <i class="icon ri-arrow-right-up-long-line"></i></button>
         </div>
     </nav>
