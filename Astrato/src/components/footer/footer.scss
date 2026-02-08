@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .upper {
+    .upper{
         height: 100%;
         text-align: center;
 
@@ -54,7 +54,7 @@
         }
         
         h2 {
-            width: 50%;
+            width: 45vw;
             font-size: 2.3rem;
             font-weight: 400;
             position: relative;
@@ -63,20 +63,25 @@
                 color:white;
                 display: inline-block;
                 font-weight: 300;
-            }
+                position: relative;
 
-            .yellow {
-                width: 49%;
-                height: 35%;
+                .yellow {
+
+                width: 102%;
+                height: 120%;
                 background-color: rgb(255, 217, 0);
                 border-radius: 20px;
                 transform: rotate(3deg);
 
                 position: absolute;
-                bottom: 29%;
-                left: 20%;
+                top: 0;
+                // bottom: 29%;
+                // left: 20%;
                 z-index: -1;
             }
+            }
+
+            
         }
 
         #title {

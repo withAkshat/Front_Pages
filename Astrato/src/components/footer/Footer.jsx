@@ -5,7 +5,7 @@ function Footer() {
     <div className='footer'>
         <div className="upper">
             <p id="title" >Open the door to forging your brand's story</p>
-            <h2>Embark on a Transformative Journey Shaping <span id="identity">Your Brand's Destiny</span> Through Our Dedicated Partnership<div className="yellow"></div></h2>
+            <h2>Embark on a Transformative Journey Shaping <span id="identity">Your Brand's Destiny<div className="yellow"></div></span> Through Our Dedicated Partnership</h2>
             <p id="desc">Join us on a transformative journey to shape your brand's destiny thorugh our dedicated partnership, crafting a narrative that resonates</p>
 
             <div className="getStarted">
